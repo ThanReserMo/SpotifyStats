@@ -8,6 +8,10 @@ plt.style.use('dark_background')
 #https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023/data
 st.title('Spotify Statistics 2023!')
 
+url = "https://www.kaggle.com/datasets/nelgiriyewithana/top-spotify-songs-2023"
+
+st.markdown("The data set used for this project can be found in this [Kaggle link](%s)! " % url)
+
 #https://www.kaggle.com/code/sethegolfcu/unique-songs
 stats=pd.read_csv('spotify-2023.csv',encoding='ISO-8859-1')
 
